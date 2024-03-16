@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on Exploratory Data Analysis and classification modeling to uncover insights from the data and build predictive models to understand customer re-ordering patterns.
+This project aims to analyze customer retention in the online food sales industry. By employing various machine learning models and data preprocessing techniques, this project seeks to understand the factors that contribute to customer retention and churn. The dataset used in this project is sourced from Kaggle and contains various features related to customer transactions and interactions.
 
 ## Dataset
 
