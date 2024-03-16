@@ -2,11 +2,7 @@
 
 ## Overview
 
-This project focuses on Exploratory Data Analysis (EDA) and modeling to uncover insights from the data and build predictive models to understand Customer Churn.
-
-Customer churn, also known as customer attrition, refers to the phenomenon where customers stop doing business with a company or service. It is a critical metric for businesses as it directly impacts revenue and profitability.
-
-High churn rates can indicate dissatisfaction with the product or service, poor customer experience.
+This project focuses on Exploratory Data Analysis and classification modeling to uncover insights from the data and build predictive models to understand customer re-ordering patterns.
 
 ## Dataset
 
@@ -26,7 +22,7 @@ It contains the following features:
 10. Pin code
 11. Output
 12. Feedback
-13. Una
+13. Unnamed: 12
 
 The main variables of interest is **Output**.
 
@@ -48,19 +44,29 @@ The following libraries are required to run the notebook:
 ## Results
 
 1. **Logistic Regression**:
+
    a. Precision for predicting "Yes" (0.90) is higher than for predicting "No" (0.63),indicating that the model is better at correctly identifying positive cases.
+   
    b. Recall for predicting "Yes" (0.93) is higher than for predicting "No" (0.55),indicating that the model is better at capturing actual positive cases.
+   
    c. F1-score for predicting "Yes" (0.91) is high,indicating a good balance between precision and recall for positive cases.
+   
    d. ROC AUC score (0.857) is also quite good,indicating that the model performs well in distinguishing between positive and negative cases.
 
-2. **Random Forest**:
+3. **Random Forest**:
+   
    a. Precision,recall,and F1-score for predicting "Yes" are all high (0.91,0.96,0.93 respectively),indicating that the model performs well in identifying positive cases.
+   
    b. Precision,recall,and F1-score for predicting "No" are lower compared to Logistic Regression,indicating that the model is not as good at predicting negative cases.
+   
    c. ROC AUC score (0.913) is higher than Logistic Regression,indicating better overall performance in distinguishing between positive and negative cases.
 
-3. **K-Nearest Neighbors**:
+5. **K-Nearest Neighbors**:
+   
    a. Precision,recall,and F1-score for predicting "Yes" are high (0.92,0.95,0.93 respectively),similar to Random Forest.
+   
    b. Precision,recall,and F1-score for predicting "No" are lower compared to Logistic Regression and Random Forest.
+   
    c. ROC AUC score (0.839) is lower than both Logistic Regression and Random Forest,indicating that the model is not as effective in distinguishing between positive and negative cases.
 
 ### Overall:
